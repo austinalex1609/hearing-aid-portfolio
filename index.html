@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequency Selective Hearing Aid with Noise Cancellation and Echo Blocking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900 font-sans scroll-smooth">
+
+<!-- HERO -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+    Frequency Selective Hearing Aid with Noise Cancellation and Echo Blocking
+  </h1>
+  
+  <p class="text-lg max-w-2xl mb-6">
+    Enhancing speech clarity in noisy environments using signal processing and amplification
+  </p>
+
+  <div class="text-sm text-gray-600">
+    <p><strong>Austin Alex</strong> - RA2311013010036</p>
+    <p><strong>Mohammed Rayyan</strong> - RA2311013010054</p>
+    <p><strong>Mohamed Rizin</strong> - RA2311013010053</p>
+    <p class="mt-2">Biomedical Engineering | Minor Project</p>
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="py-20 max-w-4xl mx-auto px-6">
+  <h2 class="text-3xl font-semibold mb-6">Introduction</h2>
+  <p class="text-lg leading-relaxed">
+    Hearing loss significantly affects a person’s ability to understand speech, especially in noisy environments.
+    Conventional hearing aids amplify all sounds equally, which often leads to poor speech clarity.
+    This project presents a frequency selective hearing aid system with noise cancellation and echo blocking
+    to enhance speech intelligibility using filtering and amplification techniques. Our project focuses on developing a frequency-selective hearing aid system that provides customized amplification based on an individual’s hearing profile, while also incorporating noise cancellation and echo suppression. This will improve the users experience with a wearable device.
+  </p>
+</section>
+
+<!-- COMPONENTS -->
+<section class="py-20 bg-gray-50 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-10">Components Used</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div>
+        <h3 class="text-xl font-bold">Arduino Uno</h3>
+        <img src="arduino.jpg" class="mt-3 rounded-xl">
+        <p>Controls the system and processes input signals.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold">MAX9814 Microphone</h3>
+        <img src="mic.jpg" class="mt-3 rounded-xl">
+        <p>Captures environmental audio with automatic gain control.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold">LM4861 Amplifier</h3>
+        <img src="lm.jpg" class="mt-3 rounded-xl">
+        <p>Amplifies the processed audio signal.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold">TDA1308 Amplifier</h3>
+        <img src="tda.jpg" class="mt-3 rounded-xl">
+        <p>Enhances output signal for earphones.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="py-20 max-w-4xl mx-auto px-6">
+  <h2 class="text-3xl font-semibold mb-6">Methodology</h2>
+
+  <img src="methodology.jpg" class="rounded-xl mb-6">
+
+  <p class="text-lg leading-relaxed">
+The system was developed using a structured approach focusing on audio acquisition, signal processing, and output enhancement. Initially, sound signals are captured using a microphone and converted into electrical signals. These signals are then processed using an Arduino-based system to improve speech clarity.
+
+A frequency selective filtering technique is applied to emphasize speech-relevant frequencies (300 Hz–3400 Hz) while suppressing irrelevant components. Noise reduction is implemented using threshold-based filtering to minimize background disturbances. Additionally, echo blocking is incorporated to reduce feedback and improve overall sound quality.
+
+The processed signal is then amplified and delivered through an output device such as earphones or a speaker. The system is tested under different noise conditions to evaluate performance in terms of clarity and user experience.
+
+This methodology ensures an efficient and cost-effective solution for enhancing speech intelligibility in hearing aid applications.
+  </p>
+</section>
+
+<!-- HARDWARE -->
+<section class="py-20 bg-gray-50 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Hardware Setup</h2>
+
+    <img src="setup.jpg" class="rounded-xl">
+
+    <p class="mt-4 text-lg">
+The hardware setup includes Arduino Uno, microphone module, and audio amplifiers
+connected together for real-time signal processing and output. The circuitry of the proposed hearing aid system is designed to capture, process, and amplify audio signals efficiently. A microphone is used to convert sound into electrical signals, which are then fed into the Arduino for processing. The circuit includes filtering components to perform frequency selection and basic noise reduction. An amplification stage is implemented to boost the processed signal before delivering it through an output device such as earphones or a speaker. The overall circuit is designed to be simple, cost-effective, and suitable for real-time audio signal processing.
+    </p>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="py-20 max-w-4xl mx-auto px-6">
+  <h2 class="text-3xl font-semibold mb-6">Results</h2>
+
+  <img src="results.jpg" class="rounded-xl">
+
+  <p class="mt-4 text-lg">
+The developed system successfully demonstrated effective enhancement of speech signals in the presence of background noise. The frequency selective filtering improved clarity by emphasizing speech-relevant frequencies, while noise cancellation techniques reduced unwanted ambient disturbances. Echo blocking further minimized feedback, resulting in a cleaner and more stable audio output. Testing under different noise conditions showed noticeable improvement in speech intelligibility compared to unprocessed audio. The system operated reliably with low complexity, validating its suitability for real-time applications.
+  </p>
+</section>
+
+<!-- CONCLUSION -->
+<section class="py-20 bg-gray-50 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Conclusion</h2>
+    <p class="text-lg leading-relaxed">
+This project demonstrates an effective frequency selective hearing aid system.
+Future enhancements can include AI-based adaptive filtering and improved noise
+cancellation for real-world applications. This project presents a practical and efficient hearing aid solution that integrates frequency selection, noise reduction, and echo control to enhance audio quality. The system effectively improves speech intelligibility and listening comfort, addressing key limitations of conventional amplification-based devices. With its simple design and cost-effective implementation, the project demonstrates strong potential for further development into a reliable assistive technology for individuals with hearing impairment.
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
